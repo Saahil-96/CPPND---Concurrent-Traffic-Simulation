@@ -39,3 +39,7 @@ This concurrent traffic simulation should run with red lights controlling traffi
 6. The thread then permits cars to cross the intersection in the same order they came
 
 **This code makes sure that every time the mutual resources are used, they are locked and unlocked respectively.
+
+## Keywords
+
+C++, Simulation, Synchronization, Threads, Mutex, Promises, Futures
