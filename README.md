@@ -31,11 +31,11 @@ This concurrent traffic simulation should run with red lights controlling traffi
 
 ## Steps Followed by code
 
-. Simulate environment and start traffic lights to alternate between 4 to 6 milliseconds
-. Start multiple cars on separate threads
-. Cars slow down to 10% speed when 10% of the path remains
-. Once it gets to the intersection, it waits for the traffic light to turn green 
-. Once the traffic light turns green, it lets the promises to all the cars know
-. The thread then permits cars to cross the intersection in the same order they came
+1. Simulate environment and start traffic lights to alternate between 4 to 6 milliseconds
+2. Start multiple cars on separate threads
+3. Cars slow down to 10% speed when 10% of the path remains
+4. Once it gets to the intersection, it waits for the traffic light to turn green 
+5. Once the traffic light turns green, it lets the promises to all the cars know
+6. The thread then permits cars to cross the intersection in the same order they came
 
 **This code makes sure that every time the mutual resources are used, they are locked and unlocked respectively.
