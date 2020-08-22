@@ -40,6 +40,26 @@ This concurrent traffic simulation should run with red lights controlling traffi
 
 **This code makes sure that every time the mutual resources are used, they are locked and unlocked respectively.
 
+## File Descriptions
+
+### Graphics.h/cpp
+Used to render the graphics i.e the maps and traffic objects.
+
+### Trafficobjects.h/cpp
+All objects in the simulation are inherited from traffic objects and thus these files give them the basic characteristics
+
+### Street.h/cpp
+The streets of the simulation are inherited from traffic objects and are used to determine intersections
+
+### Intersection.h/cpp
+Intersections are used to determine when the vehicles should slow down and where the vehicles need to be to be added to the traffic light queu
+
+### Trafficlight.h/cpp
+Traffic lights are also traffic objects which notify the intersections that notify the vehicles when the red light turns green and they can exit the intersection
+
+### Vehicle.h/cpp
+Defines the vehicle object 
+
 ## Keywords
 
 C++, Simulation, Synchronization, Threads, Mutex, Promises, Futures
